@@ -17,11 +17,12 @@ project2.addEventListener("click", ()=>{
 function validator(project, link){
     let user = prompt('Maaf link ini dibatasi, mohon masukan Identitas anda untuk melihat ini');
 
-    if (user == "admin"){
-        project.setAttribute("href", link)
-        alert(`Selamat Datang ${user}`)
-        return
-    }
-    alert(`Maaf, ${user} tidak diijinkan mengakses project ini !`)
-    return
+    switch (user){
+        case "admin":
+            project.setAttribute("href", link)
+            alert(`Selamat Datang ${user}`)
+            break
+        case "":
+            alert(`Maaf, Anda tidak diijinkan mengakses project ini !`)
+    }   
 }
