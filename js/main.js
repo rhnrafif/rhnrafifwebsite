@@ -24,5 +24,8 @@ function validator(project, link){
             break
         case "":
             alert(`Maaf, Anda tidak diijinkan mengakses project ini !`)
+            break
+        default :
+            alert(`Maaf, ${user} tidak diijinkan mengakses project ini !`)
     }   
 }
