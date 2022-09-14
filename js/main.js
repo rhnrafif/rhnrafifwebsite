@@ -9,7 +9,7 @@ project1.addEventListener("click", ()=>{
 })
 
 project2.addEventListener("click", ()=>{
-    validator(project2, "#");
+    validator(project2, "https://portfolio-orcin-omega.vercel.app/");
     return
 })
 
